@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray !important;
+}
+header {
+    background-color: rgb(151, 104, 149);
+    color: white;
+}
+main {
+    background-color: rgb(88, 85, 85);
+    color: white;
+}
+
