@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Find mean mode and median </title>
+</head>
+<body>
+    <header>
+        <h1>Mode, mean and median 📝 </h1>
+        <p>Here you can find the mode, the mean and the median of a list of numbers</p>
+    </header>
+
+    <main>
+        <h2>List of numbers</h2>
+        <form action="">
+            <label for="inputModaMedianaMedia">Insert the list of numbers separated by semicolons ";"</label>
+            <br>
+            <textarea id="inputModaMedianaMedia" ></textarea>
+            <br>
+            <br>
+            <button class="btn btn-primary" type="button" onclick="calcularMedia()">Calculate mean</button>
+            <br>
+            <br>
+            <button class="btn btn-primary" type="button" onclick="calcularMediana()">Calculate median</button>
+            <br>
+            <br>
+            <button class="btn btn-primary" type="button" onclick="calcularModa()">Calculate mode</button>
+        </form>
+        <br>
+        <div id="ResultMean"></div>
+        <br>
+        <div id="ResultMedian"></div>
+        <br>
+        <div id="ResultMode"></div>
+
+    </main>
+    <script src="./promedio.js"></script>
+    <script src="./mediana.js"></script>
+    <script src="./moda.js"></script>
+</body>
+</html>

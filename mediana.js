@@ -8,23 +8,17 @@ function calcularMediaAritmetica(lista) {
     return promedioLista;
   }
   
-  const lista1 = [
-    100,
-    200,
-    500,
-    400000000,
-  ];
-  
-  const mitadLista1 = parseInt(lista1.length / 2);
-  
-  function esPar(numerito) {
-    if (numerito % 2 === 0) {
-      return true;
-    } else {
-      return false;
-    }
+
+function esPar(numerito) {
+  if (numerito % 2 === 0) {
+    return true;
+  } else {
+    return false;
   }
-  
+};
+
+function mediana(lista1){
+  const mitadLista1 = parseInt(lista1.length / 2);
   let mediana;
   
   if (esPar(lista1.length)) {
@@ -40,3 +34,17 @@ function calcularMediaAritmetica(lista) {
   } else {
     mediana = lista1[mitadLista1];
   }
+  return mediana;
+
+};
+
+function calcularMediana(){
+  const inputList = document.getElementById("inputModaMedianaMedia");
+  const inputStringListValues =  inputList.value.split(';');
+  let inputNumberListValues = inputStringListValues.map(value=> { return parseFloat(value)} )
+  inputNumberListValues.sort((a,b)=>{return a-b})
+  const median = mediana(inputNumberListValues)
+  const ResultMedian = document.getElementById("ResultMedian");
+  ResultMedian.innerHTML=`<p class="alert alert-danger" >The median is: ${median}</p>`;
+  
+}
