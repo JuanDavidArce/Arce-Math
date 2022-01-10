@@ -51,7 +51,8 @@ function calcularPerimetroCuadrado()
     const input= document.getElementById("inputCuadrado");
     const value =parseFloat(input.value);
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    const ResultSquare = document.getElementById("ResultSquare");
+    ResultSquare.innerHTML=`<p class="alert alert-danger">The perimeter is: ${perimetro}</p>`;
 };
 
 function calcularAreaCuadrado()
@@ -60,7 +61,9 @@ function calcularAreaCuadrado()
     const value =parseFloat(input.value);
 
     const area = areaCuadrado(value);
-    alert(area);
+
+    const ResultSquare = document.getElementById("ResultSquare");
+    ResultSquare.innerHTML=`<p class="alert alert-danger" >The area is: ${area}</p>`;
 };
 
 function calcularPerimetroTriangulo()
@@ -74,7 +77,9 @@ function calcularPerimetroTriangulo()
     const inputLado2= document.getElementById("inputTrianguloLado2");
     const lado2 = parseFloat(inputLado2.value);
     const perimetro= perimetroTriangulo(lado1,lado2,base);
-    alert(perimetro);
+    
+    const ResultTriangle = document.getElementById("ResultTriangle");
+    ResultTriangle.innerHTML=`<p class="alert alert-danger" >The perimeter is: ${perimetro}</p>`;
 };
 
 function calcularAreaTriangulo()
@@ -87,7 +92,8 @@ function calcularAreaTriangulo()
     const altura =parseFloat(inputAltura.value);
     
     const area= areaTriangulo(base, altura);
-    alert(area);
+    const ResultTriangle = document.getElementById("ResultTriangle");
+    ResultTriangle.innerHTML=`<p class="alert alert-danger" >The area is: ${area}</p>`;
 
     
 };
@@ -97,7 +103,8 @@ function calcularPerimetroCirculo()
     const input= document.getElementById("inputCirculo");
     const value =parseFloat(input.value);
     const perimetro = perimetroCirculo(value);
-    alert(perimetro);
+    const ResultCircle = document.getElementById("ResultCircle");
+    ResultCircle.innerHTML=`<p class="alert alert-danger" >The perimeter is: ${perimetro}</p>`;
 
 };
 
@@ -106,5 +113,6 @@ function calcularAreaCirculo()
     const input= document.getElementById("inputCirculo");
     const value =parseFloat(input.value);
     const area = areaCirculo(value);
-    alert(area);
+    const ResultCircle = document.getElementById("ResultCircle");
+    ResultCircle.innerHTML=`<p class="alert alert-danger" >The perimeter is: ${area}</p>`;
 };

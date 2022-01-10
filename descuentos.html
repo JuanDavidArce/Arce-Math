@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <title>Percentages and discounts </title>
 </head>
 <body>
@@ -19,16 +22,21 @@
 
     <form>
       <label for="InputPrice">Write the price of your product:</label>
+      <br>
       <input id="InputPrice" type="number" />
+      <br>
 
-      <label for="InputDiscount">Write the discount of your product:</label>
+      <label for="InputDiscount">Write the discount of your product: (%)</label>
+      <br>
       <input id="InputDiscount" type="number" />
-
-      <button type="button" onclick="onClickButtonPriceDiscount()">
+      <br>
+      <br>
+      <button class="btn btn-success" type="button" onclick="onClickButtonPriceDiscount()">
         Calculate the discounted price
       </button>
-
-      <p id="ResultP"></p>
+      <br>
+      <br>
+      <div id="ResultDiscount"></div>
     </form>
 </main>
 

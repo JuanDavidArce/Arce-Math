@@ -8,21 +8,34 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
+
     <header>
         <h1>Geometric figures 📐 </h1>
         <p>Here you can find the area and perimeter of a circle, triangle and square</p>
     </header>
+
     <main>
+        <!-- Cuadrado -->
         <h2>Calculate the area and perimeter of a square 🟥</h2>
         <form action="">
             <label for="inputCuadrado">Write how long each side of your square is:</label>
             <br>
             <input type="number" id="inputCuadrado">
+            <br>
+            <br>
             <button class="btn btn-primary" type="button" onclick="calcularPerimetroCuadrado()">Calculate the perimeter</button>
+            <br>
+            <br>
             <button class="btn btn-info" type="button" onclick="calcularAreaCuadrado()">Calculate the area</button>
         </form>
 
+        <br>
+        <div id="ResultSquare"></div>
+        <br>
+
+        <!-- Triangulo -->
         <h2>Calculate the area and perimeter of a triangle 🔺 </h2>
         <form action="">
             <div>
@@ -50,18 +63,30 @@
             </div>
             <br>
             <button class="btn btn-primary" type="button" onclick="calcularPerimetroTriangulo()">Calculate the perimeter</button>
+            <br>
+            <br>
             <button class="btn btn-info" type="button" onclick="calcularAreaTriangulo()">Calculate the area</button>
         </form>
+        <br>
+        <div id="ResultTriangle"></div>
 
 
+        <!-- Circulo -->
         <h2>Calculate the area and perimeter of a circle🟡</h2>
         <form action="">
             <label for="inputCirculo">Write how much is the radius of your circle:</label>
             <br>
             <input type="number" id="inputCirculo">
+            <br>
+            <br>
             <button class="btn btn-primary" type="button" onclick="calcularPerimetroCirculo()">Calculate the perimeter</button>
+            <br>
+            <br>
             <button class="btn btn-info" type="button" onclick="calcularAreaCirculo()">Calculate the area</button>
         </form>
+        <br>
+        <div id="ResultCircle"></div>
+
 
 
     </main>
