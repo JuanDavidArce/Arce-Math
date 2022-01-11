@@ -114,5 +114,5 @@ function calcularAreaCirculo()
     const value =parseFloat(input.value);
     const area = areaCirculo(value);
     const ResultCircle = document.getElementById("ResultCircle");
-    ResultCircle.innerHTML=`<p class="alert alert-danger" >The perimeter is: ${area}</p>`;
+    ResultCircle.innerHTML=`<p class="alert alert-danger" >The area is: ${area}</p>`;
 };
